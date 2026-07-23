@@ -1,5 +1,43 @@
 /******* GENERAL *******/
-/* spacing on all sections */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #212529;
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: #A3C9D1  ;
+}
+
+a:hover {
+    color: #DED4AD;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #A3C9D1;
+    outline-offset: 3px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 1rem;
+    z-index: 2000;
+    padding: 0.75rem 1rem;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 0.25rem;
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
 #about,
 #skills,
 #portfolio,
@@ -7,95 +45,138 @@
     margin-top: 4rem;
     padding-top: 4rem;
 }
+
 #about h2,
 #skills h2,
 #portfolio h2,
 #contact h2 {
     margin-bottom: 3rem;
 }
+
 #contact {
     padding-bottom: 4rem;
 }
 
-/* display background dark color on navbar scroll */
-.navbarScroll.navbarDark {
-    background-color: #5b5b5b;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-/* hero background image */
+.card {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navbarScroll {
+    background-color: rgba(0, 0, 0, 0.78);
+}
+
+.navbarScroll.navbarDark {
+    background-color: #343a40;
+}
+
 .bgimage {
     height: 100vh;
     max-height: 900px;
-    background: url("images/image1.jpg");
+    min-height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url("images/image1.jpg");
     background-size: cover;
+    background-position: center;
     position: relative;
 }
-/* text css above hero image*/
+
 .hero_title {
-    font-size: 4.5rem;
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
 }
+
 .hero_desc {
-    font-size: 2rem;
+    font-size: clamp(1.25rem, 4vw, 2rem);
+    max-width: 900px;
+    margin: 0 auto;
 }
+
 .hero-text {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #ffffff;
+    padding: 0 1rem;
 }
 
-/* about */
 .imageAboutPage {
     width: 100%;
-}
-.imageAboutPage {
+    max-width: 320px;
+    display: block;
+    margin: 0 auto;
     border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
 }
 
-/* skills */
 .skillsText.card {
-    height: 350px;
-    cursor: pointer;
+    min-height: 350px;
 }
+
 .skillsText img {
     width: 100%;
     height: 150px;
     object-fit: contain;
 }
-#skills p {
-    text-align: center;
-}
-.skillsIcon {
-    font-size: 36px;
-    text-align: center;
-    width: 100%;
-}
-.card-title {
-    text-align: center;
-}
-.card:hover .skillsIcon {
-    color: #008000;
-}
-.skillsText:hover {
-    border: 1px solid #008000;
-}
 
-/* portfolio */
+.card-title,
+#skills p,
 #portfolio p {
     text-align: center;
 }
 
-/* contact */
+.skillsText:hover,
+.portfolioContent:hover {
+    border-color: #DED4AD;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
+}
+
+.portfolioContent img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.btn-success {
+    color: #ffffff;
+    background-color: #A3C9D1;
+    border-color: #A3C9D1;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    color: #ffffff;
+    background-color: #DED4AD;
+    border-color: #DED4AD;
+}
+
 .contactColumn {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.contactColumn i {
-    color: #198754;
+    text-align: center;
 }
 
-/* footer */
+.contactIcon {
+    color: #A3C9D1;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    #about,
+    #skills,
+    #portfolio,
+    #contact {
+        margin-top: 2rem;
+        padding-top: 3rem;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+}
