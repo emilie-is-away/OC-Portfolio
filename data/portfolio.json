@@ -1,20 +1,38 @@
 [
     {
-        "image": "image1.png",
-        "title": "Booki",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
-    },
-    {
-        "image": "image2.png",
-        "title": "Mon Vieux grimoire",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
-    },
-    {
-        "image": "image3.png",
+        "image": "image1.webp",
         "title": "Kasa",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
+        "text": "Développement d'une application React, création de composants, routing, gestion des erreurs et tests unitaires avec Vitest et React Testing Library.",
+        "link": "https://github.com/emilie-is-away/OC-Kasa-Frontend"
+    },
+    {
+        "image": "image2.webp",
+        "title": "Eco Bliss Bath",
+        "text": "Automatisation de tests avec Cypress, tests API, parcours panier, analyse des anomalies et rédaction d'un bilan de campagne de test.",
+        "link": "https://github.com/emilie-is-away/OC-Eco-Bliss-Bath"
+    },
+    {
+        "image": "image3.webp",
+        "title": "Menu Maker by Qwenta",
+        "text": "Analyse du besoin, rédaction de spécifications techniques, organisation du projet avec un Kanban et définition d'une solution web.",
+        "link": "https://github.com/emilie-is-away"
+    },
+    {
+        "image": "image4.webp",
+        "title": "Booki",
+        "text": "Développement d'un site web en HTML/CSS",
+        "link": "https://booki.emiliely.fr/"
+    },
+    {
+        "image": "image5.webp",
+        "title": "Sophie Bluel",
+        "text": "Création d'une page web dynamique avec JavaScript",
+        "link": "https://github.com/emilie-is-away/OC-Portfolio-Sophie-Bluel"
+    },
+    {
+        "image": "image6.webp",
+        "title": "TOMSEN",
+        "text": "Conception d'une stratégie de test pour une application financière",
+        "link": "https://github.com/emilie-is-away"
     }
-]
+]  
